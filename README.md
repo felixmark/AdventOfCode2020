@@ -1,6 +1,7 @@
 # AdventOfCode2020
 My solutions for the [Advent of Code 2020](https://github.com/felixmark/AdventOfCode2020).
 
+Table of Contents
 [Day 1](#day-1)
 
 ## Day 1
