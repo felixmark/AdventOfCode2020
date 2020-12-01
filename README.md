@@ -5,6 +5,8 @@ Table of Contents
 
 [Day 1](#day-1)
 
+---
+
 ## Day 1
 ### Task 1
 Find two numbers in a list that add up to the value 2020.
