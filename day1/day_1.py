@@ -1,3 +1,10 @@
+"""
+Advent of Code 2020 Day 01
+==================================================================================================
+I tried to challenge myself with really hard to read variable names.
+This code works as expected and is not meant to be the fastest algorithm for the task.
+"""
+
 def uwu2(owo):
     for w in range(0, len(owo)):
         for o in range(w, len(owo)):
