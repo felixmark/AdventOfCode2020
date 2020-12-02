@@ -13,11 +13,11 @@ My solutions for the [Advent of Code 2020](https://adventofcode.com/2020).
 
 ## Day 1
 **Task 1**  
-Find two numbers in a list that add up to the value 2020.  
+Find two numbers in the input file that add up to the value 2020.  
 The solution is the product of the two values.  
   
 **Task 2**  
-Find three numbers in a list that add up to the value 2020.  
+Find three numbers in the input file that add up to the value 2020.  
 The solution is the product of the three values.
 
 
