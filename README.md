@@ -2,8 +2,8 @@
 My solutions for the [Advent of Code 2020](https://adventofcode.com/2020).
 
 ##### Table of Contents
-[Day 1](#day-1)
-[Day 2](#day-2)
+- [Day 1](#day-1)  
+- [Day 2](#day-2)  
 
 ---
 
