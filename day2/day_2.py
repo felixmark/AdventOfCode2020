@@ -33,7 +33,8 @@ def main():
         lines = input_string.splitlines(False)
         pw_with_rules = []
         for line in lines:
-            groups = re.match(r"([0-9]+)-([0-9]+) ([a-z]): (.*)", line, re.IGNORECASE).groups()
+            regex = r"(\d+)-(\d+) (.): (.+)"
+            groups = re.match(regex, line, re.IGNORECASE).groups()
             pw_with_rules.append({
                 "from": int(groups[0]),
                 "to": int(groups[1]),
