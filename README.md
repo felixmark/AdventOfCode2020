@@ -1,7 +1,7 @@
 # Advent of Code 2020
 My solutions for the [Advent of Code 2020](https://adventofcode.com/2020).
 
-##### Table of Contents
+##### Advent Calendar
 [Day 01](#day-1),  [Day 02](#day-2),  [Day 03](#day-3),  [Day 04](#day-4),  
 [Day 05](#day-5),  [Day 06](#day-6),  [Day 07](#day-7),  [Day 08](#day-8),  
 [Day 09](#day-9),  [Day 10](#day-10), [Day 11](#day-11), [Day 12](#day-12),  
