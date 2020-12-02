@@ -2,6 +2,8 @@
 Advent of Code 2020 Day 02
 """
 
+import re
+
 def task1(passwords_with_rules):
     correct_password_cnt = 0
     for password_with_rule in passwords_with_rules:
@@ -25,13 +27,12 @@ with open("input.txt", "r") as input_file:
     lines = input_string.splitlines(False)
     passwords_with_rules = []
     for line in lines:
-        parts = line.replace(":", "").split(" ")
-        values = list(map(int, parts[0].split("-")))
+        groups = re.match(r"([0-9]+)-([0-9]+) ([a-z]): (.*)", line, re.IGNORECASE).groups()
         passwords_with_rules.append({
-            "from":         values[0],
-            "to":           values[1],
-            "character":    parts[1],
-            "password":     parts[2]
+            "from":         int(groups[0]),
+            "to":           int(groups[1]),
+            "character":    groups[2],
+            "password":     groups[3]
         })
     print("Solution 1: " + str(task1(passwords_with_rules)))
     print("Solution 2: " + str(task2(passwords_with_rules)))
