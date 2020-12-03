@@ -2,12 +2,11 @@
 My solutions for the [Advent of Code 2020](https://adventofcode.com/2020).
 
 ##### Advent Calendar
-[Day 01](#day-1),  [Day 02](#day-2),  [Day 03](#day-3),  [Day 04](#day-4),  
-[Day 05](#day-5),  [Day 06](#day-6),  [Day 07](#day-7),  [Day 08](#day-8),  
-[Day 09](#day-9),  [Day 10](#day-10), [Day 11](#day-11), [Day 12](#day-12),  
-[Day 13](#day-13), [Day 14](#day-14), [Day 15](#day-15), [Day 16](#day-16),  
-[Day 17](#day-17), [Day 18](#day-18), [Day 19](#day-19), [Day 20](#day-20),  
-[Day 21](#day-21), [Day 22](#day-22), [Day 23](#day-23), [Day 24](#day-24)
+[Day 01](#day-1),  [Day 02](#day-2),  [Day 03](#day-3),  [Day 04](#day-4),  [Day 05](#day-5),  
+[Day 06](#day-6),  [Day 07](#day-7),  [Day 08](#day-8),  [Day 09](#day-9),  [Day 10](#day-10),  
+[Day 11](#day-11), [Day 12](#day-12), [Day 13](#day-13), [Day 14](#day-14), [Day 15](#day-15),  
+[Day 16](#day-16), [Day 17](#day-17), [Day 18](#day-18), [Day 19](#day-19), [Day 20](#day-20),  
+[Day 21](#day-21), [Day 22](#day-22), [Day 23](#day-23), [Day 24](#day-24), [Day 25](#day-25)  
 
 ---
 
@@ -33,10 +32,12 @@ The solution is the number of valid passwords from the input file.
 
 ## Day 3
 **Task 1**  
-???  
+The input file contains a map. The map shows locations of trees represented by a `#`. You begin at the top left of the map and try to get to the very bottom. When the map ends horizontally, it is considered to be tiled, so you begin again from the left.  
+The solution is the amount of trees you encounter when moving 3 steps to the right and 1 to the bottom each step.
 
 **Task 2**  
-???  
+This time the steps change, and you have to calculate different patterns. For instance 1 step to the right and 1 step down and others.  
+The solution is the product of the amount of trees encountered with each pattern given.
 
 
 ## Day 4
@@ -200,6 +201,14 @@ The solution is the number of valid passwords from the input file.
 
 
 ## Day 24
+**Task 1**  
+???  
+
+**Task 2**  
+???  
+
+
+## Day 25
 **Task 1**  
 ???  
 
