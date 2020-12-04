@@ -42,10 +42,12 @@ The solution is the product of the amount of trees encountered with each pattern
 
 ## Day 4
 **Task 1**  
-???  
+The input file contains passports separated by empty lines. The passports have to have 7 properties without checking the actual content of them.  
+The solution is the amount of valid passports within the input file.
 
 **Task 2**  
-???  
+For task two the properties of the passports (id, height, eye color, etc.) have to be in given boundaries, to be valid.  
+The solution is the new amount of valid passports.
 
 
 ## Day 5
