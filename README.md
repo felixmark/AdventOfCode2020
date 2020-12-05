@@ -52,11 +52,12 @@ The solution is the new amount of valid passports.
 
 ## Day 5
 **Task 1**  
-???  
+A string representing a seat ID in a plane has to be parsed into an actual ID of it. The input looks like this: `FBBFFFBRRL` where F means Front, B means Back, L means Left and R means Right. There are 128 rows and 8 columns. F and L means "keep the lower half", where B and R means "keep the upper half". By applying this rule to all the seats a seat ID can be created by calculating it with: `row * 8 + col`.  
+The solution is the ID of the last seat with the highest ID.
 
 **Task 2**  
-???  
-
+Now the one empty seat in the plane, which is not at the front or at the end has to be found.  
+The solution is the ID of the free seat in the plane.
 
 ## Day 6
 **Task 1**  
