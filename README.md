@@ -61,10 +61,12 @@ The solution is the ID of the free seat in the plane.
 
 ## Day 6
 **Task 1**  
-???  
+A list of answers from groups of people should be analyzed for any answer anybody has ticked as "yes".  
+The solution is the sum of all ticked answers per group. So if group 1 ticked 3 answers and group 2 ticked 2 answers as yes the solution is 5. 
 
 **Task 2**  
-???  
+This time only answers which everybody from each group answered with "yes" should be counted.  
+The solution is the sum of all ticked answers per group where everyone of the group answered with "yes".
 
 
 ## Day 7
