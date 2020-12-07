@@ -71,10 +71,11 @@ The solution is the sum of all ticked answers per group where everyone of the gr
 
 ## Day 7
 **Task 1**  
-???  
+A set of rules for bags containing other bags are given. For instance a red bag contains 4 blue bags and 2 green bags. A blue bag contains 3 yellow bags.  
+The solution is how many bags may contain your shiny gold bag.
 
 **Task 2**  
-???  
+The solution for task 2 is the amount of other bags in your shiny gold bag.  
 
 
 ## Day 8
