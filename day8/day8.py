@@ -31,7 +31,7 @@ def main():
     part1_dictionary = copy.deepcopy(instruction_dictionary)
     while True:
         instruction = part1_dictionary[next_instruction]
-        print(str(next_instruction) + " - " + instruction['instruction'] + ": " + str(instruction['value']))
+        #print(str(next_instruction) + " - " + instruction['instruction'] + ": " + str(instruction['value']))
         if instruction['times_executed'] > 0:
             break
 
@@ -74,7 +74,7 @@ def main():
                 passed_successfully = True
                 break
             instruction = part2_dictionary[next_instruction]
-            print(str(next_instruction) + " - " + instruction['instruction'] + ": " + str(instruction['value']))
+            #print(str(next_instruction) + " - " + instruction['instruction'] + ": " + str(instruction['value']))
             if instruction['times_executed'] > 0:
                 passed_successfully = False
                 break
