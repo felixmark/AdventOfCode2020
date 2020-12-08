@@ -80,10 +80,12 @@ The solution for task 2 is the amount of other bags in your shiny gold bag.
 
 ## Day 8
 **Task 1**  
-???  
+A list of instructions and values has to be executed. The instructions are `acc <value>` (global variable + value), `jmp <value>` (jump to command <value> steps from this command) and `nop <value>` (do nothing). The lines of instructions contain an endless loop.  
+The solution is the value of the global variable when the first instruction is executed twice.
 
 **Task 2**  
-???  
+One of the `jmp` instructions has to be replaced with a `nop` instruction, or a `nop` instruction has to be replaced with a `jmp` instruction, so that the program can finish without an endless loop.  
+The solution is the value of the global variable after the program finishes execution correctly.
 
 
 ## Day 9
