@@ -1,9 +1,9 @@
 """
 Advent of Code 2020 Day 11
 """
+
 import copy
 import os
-from time import sleep
 
 
 def check_dir(seat_array, row_id, seat_id, offset_x, offset_y, distance=-1):
@@ -23,29 +23,16 @@ def check_dir(seat_array, row_id, seat_id, offset_x, offset_y, distance=-1):
     return 0
 
 
-def count_adjacent_seats(seat_array, row_id, seat_id):
+def count_adjacent_seats(seat_array, row_id, seat_id, distance=-1):
     taken_seats = 0
-    taken_seats += check_dir(seat_array, row_id, seat_id, 0, -1, 1)    # N
-    taken_seats += check_dir(seat_array, row_id, seat_id, 1, -1, 1)    # NE
-    taken_seats += check_dir(seat_array, row_id, seat_id, 1, 0, 1)     # E
-    taken_seats += check_dir(seat_array, row_id, seat_id, 1, 1, 1)     # SE
-    taken_seats += check_dir(seat_array, row_id, seat_id, 0, 1, 1)     # S
-    taken_seats += check_dir(seat_array, row_id, seat_id, -1, 1, 1)    # SW
-    taken_seats += check_dir(seat_array, row_id, seat_id, -1, 0, 1)    # W
-    taken_seats += check_dir(seat_array, row_id, seat_id, -1, -1, 1)   # NW
-    return taken_seats
-
-
-def count_adjacent_seats2(seat_array, row_id, seat_id):
-    taken_seats = 0
-    taken_seats += check_dir(seat_array, row_id, seat_id, 0, -1)    # N
-    taken_seats += check_dir(seat_array, row_id, seat_id, 1, -1)    # NE
-    taken_seats += check_dir(seat_array, row_id, seat_id, 1, 0)     # E
-    taken_seats += check_dir(seat_array, row_id, seat_id, 1, 1)     # SE
-    taken_seats += check_dir(seat_array, row_id, seat_id, 0, 1)     # S
-    taken_seats += check_dir(seat_array, row_id, seat_id, -1, 1)    # SW
-    taken_seats += check_dir(seat_array, row_id, seat_id, -1, 0)    # W
-    taken_seats += check_dir(seat_array, row_id, seat_id, -1, -1)   # NW
+    taken_seats += check_dir(seat_array, row_id, seat_id, 0, -1, distance)    # N
+    taken_seats += check_dir(seat_array, row_id, seat_id, 1, -1, distance)    # NE
+    taken_seats += check_dir(seat_array, row_id, seat_id, 1, 0, distance)     # E
+    taken_seats += check_dir(seat_array, row_id, seat_id, 1, 1, distance)     # SE
+    taken_seats += check_dir(seat_array, row_id, seat_id, 0, 1, distance)     # S
+    taken_seats += check_dir(seat_array, row_id, seat_id, -1, 1, distance)    # SW
+    taken_seats += check_dir(seat_array, row_id, seat_id, -1, 0, distance)    # W
+    taken_seats += check_dir(seat_array, row_id, seat_id, -1, -1, distance)   # NW
     return taken_seats
 
 
@@ -72,11 +59,11 @@ def main():
             for row_id in range(0, len(seat_array)):
                 for seat_id in range(0, len(seat_array[row_id])):
                     if seat_array[row_id][seat_id] == 'L':
-                        if count_adjacent_seats(seat_array, row_id, seat_id) == 0:
+                        if count_adjacent_seats(seat_array, row_id, seat_id, 1) == 0:
                             seat_array_cpy[row_id][seat_id] = '#'
                             stabilized = False
                     elif seat_array[row_id][seat_id] == '#':
-                        if count_adjacent_seats(seat_array, row_id, seat_id) >= 4:
+                        if count_adjacent_seats(seat_array, row_id, seat_id, 1) >= 4:
                             seat_array_cpy[row_id][seat_id] = 'L'
                             stabilized = False
 
@@ -92,11 +79,11 @@ def main():
             for row_id in range(0, len(seat_array)):
                 for seat_id in range(0, len(seat_array[row_id])):
                     if seat_array[row_id][seat_id] == 'L':
-                        if count_adjacent_seats2(seat_array, row_id, seat_id) == 0:
+                        if count_adjacent_seats(seat_array, row_id, seat_id) == 0:
                             seat_array_cpy[row_id][seat_id] = '#'
                             stabilized = False
                     elif seat_array[row_id][seat_id] == '#':
-                        if count_adjacent_seats2(seat_array, row_id, seat_id) >= 5:
+                        if count_adjacent_seats(seat_array, row_id, seat_id) >= 5:
                             seat_array_cpy[row_id][seat_id] = 'L'
                             stabilized = False
             seat_array = copy.deepcopy(seat_array_cpy)
