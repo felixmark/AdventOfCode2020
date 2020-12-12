@@ -120,11 +120,32 @@ The solution is the amount of seats taken at the end.
 
 ## Day 12
 **Task 1**  
-???  
+A ferry should be navigated by a list of instructions:  
+```
+Action N means to move north by the given value.
+Action S means to move south by the given value.
+Action E means to move east by the given value.
+Action W means to move west by the given value.
+Action L means to turn left the given number of degrees.
+Action R means to turn right the given number of degrees.
+Action F means to move forward by the given value in the direction the ship is currently facing.
+```
+After all the instructions are executed, the Manhattan's distance should be executed (position x + position y).  
+The solution is the Manhattan's distance after all instructions are executed.
 
 **Task 2**  
-???  
-
+This time the list of instructions given shall be applied to a waypoint, and not the ferry itself.
+The instructions are:
+```
+Action N means to move the waypoint north by the given value.
+Action S means to move the waypoint south by the given value.
+Action E means to move the waypoint east by the given value.
+Action W means to move the waypoint west by the given value.
+Action L means to rotate the waypoint around the ship left (counter-clockwise) the given number of degrees.
+Action R means to rotate the waypoint around the ship right (clockwise) the given number of degrees.
+Action F means to move forward to the waypoint a number of times equal to the given value.
+```
+The solution is the Manhattan's distance after all instructions are executed.
 
 ## Day 13
 **Task 1**  
