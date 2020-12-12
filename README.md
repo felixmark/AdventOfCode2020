@@ -100,18 +100,22 @@ The solution is the sum of the smallest and largest value within the row of numb
 
 ## Day 10
 **Task 1**  
-???  
+A list of adapter "Joltages" has to be analyzed. All the adapters shall be used, and the Joltage differences between each adapter should be counted.  
+The solution is the amount of 1 Jolt differences multiplied by the amount of 3 Jolt differences.
 
 **Task 2**  
-???  
+The solution for Task two is the total number of distinct ways you can arrange the adapters to connect the charging outlet to the device.  
+(This task took me too long, so it is still unfinished.)
 
 
 ## Day 11
 **Task 1**  
-???  
+An array of seats and floor parts in a grid is given. Each seat can be free or taken. When people arrive, each seat without a taken seat surrounding it will be taken. A seat with 4 or more free seats around it will be freed. After a finite amount of iterations, the system stabilizes, and no more seats are taken or freed.  
+The solution is the amount of seats taken at the end.
 
 **Task 2**  
-???  
+This time, not only the seats surrounding the seat should be considered, but all seats in direct line of sights (lika a queen moves on a chess board). Furthermore this time a seat is only freed when 5 or more seats in sight are taken. Again, after a finite amount of iterations, the system stabilizes, and no more seats are taken or freed.  
+The solution is the amount of seats taken at the end.
 
 
 ## Day 12
