@@ -101,19 +101,12 @@ def main():
         ferry = Ferry()
         for instruction in instructions:
             execute_instruction(ferry, instruction)
-            ferry.print()
-            print("-" * 30)
         print("Solution 1: " + str(ferry.calculate_manhattan_distance()))   # 381
 
         # PART 2
         ferry2 = Ferry()
         for instruction in instructions:
-            print("-"*30)
-            ferry2.print()
-            print(str(instruction))
             execute_instruction2(ferry2, instruction)
-            ferry2.print()
-            print("-" * 30)
         print("Solution 2: " + str(ferry2.calculate_manhattan_distance()))   # NOT 56057
 
 
