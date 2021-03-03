@@ -1,12 +1,11 @@
 # Advent of Code 2020
 My solutions for the [Advent of Code 2020](https://adventofcode.com/2020).
+I have only done day 1 to 13 since I have been kind of busy after that.
 
 ##### Advent Calendar
 [Day 01](#day-1),  [Day 02](#day-2),  [Day 03](#day-3),  [Day 04](#day-4),  [Day 05](#day-5),  
 [Day 06](#day-6),  [Day 07](#day-7),  [Day 08](#day-8),  [Day 09](#day-9),  [Day 10](#day-10),  
-[Day 11](#day-11), [Day 12](#day-12), [Day 13](#day-13), [Day 14](#day-14), [Day 15](#day-15),  
-[Day 16](#day-16), [Day 17](#day-17), [Day 18](#day-18), [Day 19](#day-19), [Day 20](#day-20),  
-[Day 21](#day-21), [Day 22](#day-22), [Day 23](#day-23), [Day 24](#day-24), [Day 25](#day-25)  
+[Day 11](#day-11), [Day 12](#day-12), [Day 13](#day-13)
 
 ---
 
@@ -149,103 +148,5 @@ The solution is the Manhattan's distance after all instructions are executed.
 
 ## Day 13
 **Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 14
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 15
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 16
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 17
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 18
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 19
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 20
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 21
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 22
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 23
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 24
-**Task 1**  
-???  
-
-**Task 2**  
-???  
-
-
-## Day 25
-**Task 1**  
-???  
-
-**Task 2**  
-???  
+A bus departure list should be checked for the earliest bus that arrives after a certain time. 
+The solution is the ID of the earliest bus multiplied by the number of minutes it will take to wait for that bus.
